@@ -1,6 +1,6 @@
 # Slack Black Theme
 
-A darker, more contrasty, Slack theme.
+A darker, more contrasty, Slack theme. Modified code to work with version 3.1.1+. 
 
 # Preview
 
@@ -42,7 +42,60 @@ document.addEventListener("DOMContentLoaded", function() {
       --background: #080808;
       --background-elevated: #222;
    }
-   `
+   div.c-message.c-message--light.c-message--hover
+   {
+   color: #fff !important;
+    background-color: #3B4048 !important;
+   }
+
+   div.c-virtual_list__scroll_container {
+    background-color: #080808 !important;
+   }
+   .p-message_pane .c-message_list:not(.c-virtual_list--scrollbar), .p-message_pane .c-message_list.c-virtual_list--scrollbar > .c-scrollbar__hider {
+    z-index: 0;
+   }
+
+   div.comment.special_formatting_quote.content,.comment_body{
+    color: #ABB2BF !important;
+   }
+
+   div.c-message:hover {
+    background-color: #3B4048 !important;
+   }
+
+   div.c-message_attachment.c-message_attachment{
+    color: #7c7b7b !important;
+   }
+
+   span.c-message_attachment__pretext{
+    color: #7c7b7b !important;
+   }
+
+   hr.c-message_list__day_divider__line{
+    background: #abb2bf !important;
+   }
+
+   div.c-message_list__day_divider__label__pill{
+    background: #abb2bf !important;
+   }   
+
+   span.c-message__body,
+   a.c-message__sender_link,
+   span.c-message_attachment__media_trigger.c-message_attachment__media_trigger--caption,
+   div.p-message_pane__foreword__description span
+   {
+       color: #afafaf !important;
+   }
+
+   pre.special_formatting{
+     background-color: #222 !important;
+     color: #8f8f8f !important;
+     border: solid;
+     border-width: 1 px !important;
+    
+   }
+
+    `
 
    // Insert a style tag into the wrapper view
    cssPromise.then(css => {
@@ -100,33 +153,6 @@ Here's some example color variations you might like.
 --text: #ABB2BF;
 --background: #282C34;
 --background-elevated: #3B4048;
-```
-
-## Low Contrast
-![Low Contrast](https://cloud.githubusercontent.com/assets/7691630/24120352/4ccdedf2-0d82-11e7-8ff7-c88e48b8e917.png)
-```
---primary: #CCC;
---text: #999;
---background: #222;
---background-elevated: #444;
-```
-
-## Navy
-![Navy](https://cloud.githubusercontent.com/assets/7691630/24120353/4cd08c4c-0d82-11e7-851a-4c62340456ad.png)
-```
---primary: #FFF;
---text: #CCC;
---background: #225;
---background-elevated: #114;
-```
-
-## Hot Dog Stand
-![Hot Dog Stand](https://cloud.githubusercontent.com/assets/7691630/24120351/4cca6182-0d82-11e7-8de8-7ab99dcde042.png)
-```
---primary: #000;
---text: #FFF;
---background: #F00;
---background-elevated: #FF0;
 ```
 
 # Development
