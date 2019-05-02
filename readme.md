@@ -94,6 +94,18 @@ document.addEventListener("DOMContentLoaded", function() {
      border-width: 1 px !important;
     
    }
+   
+   .c-unified_member__display-name--medium, 
+   .c-unified_member__secondary-name--medium, 
+   #im_browser .im_browser_row {
+     color: #fff !important; 
+   }
+
+   .im_browser_row:hover .c-unified_member--medium .c-unified_member__flex-container--medium span.c-unified_member__display-name--medium, 
+   .im_browser_row:hover .c-unified_member--medium .c-unified_member__flex-container--medium span.c-unified_member__secondary-name--medium,
+   #im_browser .im_browser_row:hover {
+     color: #000 !important; 
+   }
 
     `
 
